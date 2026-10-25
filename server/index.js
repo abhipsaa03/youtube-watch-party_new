@@ -4,14 +4,13 @@ const cors = require("cors");
 const { Server } = require("socket.io");
 
 const app = express();
-
 const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:5174",
   "http://localhost:5175",
   "http://localhost:5176",
+  "https://animated-clafoutis-e51c77.netlify.app",
 ];
-
 app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
